@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: rehman-md
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    disk:
+      name: rehman-session
+      mountPath: /opt/render/project/src/session
+      sizeGB: 1

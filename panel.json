@@ -1,0 +1,6 @@
+{
+  "name": "REHMAN-MD",
+  "description": "Worldwide WhatsApp MD Bot",
+  "startup": "npm start",
+  "environment": { "NODE_VERSION": "20" }
+}
