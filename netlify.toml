@@ -1,2 +1,10 @@
 [build]
   publish = "web"
+
+# web/server.js is the Express backend source (run on a persistent Node host),
+# not a browser asset — don't serve it from the static site.
+[[redirects]]
+  from = "/server.js"
+  to = "/404.html"
+  status = 404
+  force = true
